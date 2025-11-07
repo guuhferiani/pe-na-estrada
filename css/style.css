@@ -1,0 +1,14 @@
+/* Regra */
+.row {
+  background: #06b0e9;
+  margin: .2rem;
+  padding: .2rem;
+}
+.container {
+  background: #414141;
+  padding: .5rem;
+}
+.coluna {
+  border: 5px solid #fff;
+  background: #378a1e;
+}
