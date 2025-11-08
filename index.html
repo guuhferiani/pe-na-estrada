@@ -9,12 +9,59 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <!-- CSS Base -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+
+    <header id="header" class="header">
+
+        <nav class="navbar navbar-expand-lg bg-primary">
+
+            <div class="container">
+
+                <a class="navbar-brand text-uppercase" href="#">Pé na Estrada</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Botoes do Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lugares">Lugares</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
     <!-- ALT + Shift + F -->
 
     <!-- Sobre Mim / Sobre a Marca/Produto -->
@@ -27,22 +74,85 @@
             <div class="row">
 
                 <!-- Estrutura Imagem -->
-                <div class="col-lg-1 coluna">
-                    <img src="img/sobre.png" alt="Viajante com mochila caminhando em estrada ao pôr do sol, rumo a novas experiências.">
+                <div class="col-lg-5 ">
+                    <img src="img/sobre.png"
+                        alt="Viajante com mochila caminhando em estrada ao pôr do sol, rumo a novas experiências."
+                        loading="lazy" class="img-fluid">
                 </div>
 
-                <!-- Estrutura dos Textos -->
-                <div class="col-lg-1 coluna">
-                  COLUNA 2
-                </div>                
-                
+                <!-- Estrutura dos Textos / Descrição -->
+                <div class="col-lg-7">
+                    <h3>Sobre Nós</h3>
+
+                    <p>
+                        A <strong>Pé na Estrada</strong> nasceu da paixão por explorar o mundo e transformar cada viagem
+                        em uma experiência única.
+                        Somos uma agência especializada em criar roteiros personalizados, conectando pessoas a destinos
+                        inesquecíveis — sempre com conforto, segurança e um toque de aventura.
+                    </p>
+
+                    <p>
+                        Nosso propósito é simples: inspirar você a viver momentos que ficarão para sempre na memória.
+                        Seja uma escapada de fim de semana ou uma grande jornada internacional, cuidamos de cada detalhe
+                        para que sua única preocupação seja aproveitar o caminho.
+                    </p>
+
+                    <p class="mb-0">
+                        <em>Porque viajar é mais do que chegar ao destino — é sentir cada passo da estrada.</em>
+                    </p>
+
+                    <ul class="list-unstyled mt-4">
+                        <li class="d-flex mb-3">
+
+                            <!-- <i class="bi bi-globe-americas text-primary fs-3 me-3"></i> -->
+                            <i class="bi bi-globe-americas text-primary fs-3 me-3"></i>
+                            <div>
+                                <h5 class="mb-1">DESTINOS inesquecíveis</h5>
+                                <p class="mb-0">Exploramos o mundo para oferecer roteiros únicos, cheios de cultura,
+                                    aventura e paisagens inspiradoras.</p>
+                            </div>
+                        </li>
+
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-map text-success fs-3 me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Roteiros Personalizados</h5>
+                                <p class="mb-0">Cada viagem é feita sob medida, adaptada ao seu estilo, tempo e
+                                    orçamento, com todo suporte da nossa equipe.</p>
+                            </div>
+                        </li>
+
+                        <li class="d-flex">
+                            <i class="bi bi-people text-warning fs-3 me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Atendimento Humanizado</h5>
+                                <p class="mb-0">Acompanhamos você em todas as etapas, garantindo segurança,
+                                    tranquilidade e experiências autênticas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
             </div>
-
-
 
         </div>
 
     </section>
+
+    <section id="servicos">
+        Serviços
+    </section>
+
+    <section id="lugares">
+        Lugares
+    </section>
+
+    <section id="contato">
+        Contato
+    </section>
+
+
 
 
 
