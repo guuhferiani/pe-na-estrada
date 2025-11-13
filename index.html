@@ -19,15 +19,15 @@
 
 <body>
 
-    <header id="header" class="header">
+    <header id="header" class="header ">
 
 
         <nav class="navbar navbar-expand-lg bg-primary">
 
             <div class="container">
 
-
-                <a class="navbar-brand text-uppercase" href="#">Pé na Estrada</a>
+                <!-- Logo -->
+                <a class="navbar-brand text-uppercase text-bg-primary" href="#">Pé na Estrada</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,13 +36,14 @@
 
                 <!-- Botoes do Menu -->
                 <div class="collapse navbar-collapse" id="navbarNav">
+
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
 
                         <li class="nav-item">
@@ -67,7 +68,7 @@
     <!-- ALT + Shift + F -->
 
     <!-- Sobre Mim / Sobre a Marca/Produto -->
-    <section class="about" id="about">
+    <section class="sobre" id="sobre">
 
         <!-- MAX WIDTH -- 0 - ate valor da Tabela -->
         <div class="container">
@@ -143,60 +144,134 @@
     </section>
 
     <!-- Estatisticas -->
-    <section class="stats" id="stats">
-        <div class="container">
+    <section class="stats text-bg-secondary" id="stats">
+        <div class="container ">
 
             <!-- Conteudo em Linha / Horizontal -->
             <div class="row">
 
                 <!-- Coluna 1 Stats 1-->
-                <div class="col-lg-3">
-
-                    <!-- conteudo -->
+                <div class="col-lg-3 col-md-6">
                     <div class="stats-item">
-
-                        <!-- Icone -->
                         <i class="bi bi-airplane-engines-fill"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2" class="purecounter"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2"
+                            class="purecounter"></span>
                         <p>
                             <strong>Viagens</strong>
-                            <span>Internacionais</span>
+                            <span>Internacionais</span> <br>
                         </p>
 
                     </div>
-
                 </div>
 
-                <div class="col-lg-3">
-                    Conteudo teste 2
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item">
+                        <i class="bi bi-map-fill"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2"
+                            class="purecounter"></span>
+                        <p>
+                            <strong>Viagens</strong>
+                            <span>Nacionais</span>
+                        </p>
+                    </div>
                 </div>
 
-                <div class="col-lg-3">
-                    Conteudo teste 3
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item">
+                        <i class="bi bi-globe-americas"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2"
+                            class="purecounter"></span>
+                        <p>
+                            <strong>Destinos</strong>
+                            <span>Radicias</span>
+                        </p>
+                    </div>
                 </div>
 
-                <div class="col-lg-3">
-                    Conteudo teste 4
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item">
+                        <i class="bi bi-signpost-split-fill"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2"
+                            class="purecounter"></span>
+                        <p>
+                            <strong>Passeios</strong>
+                            <span>em Trilhas</span>
+                        </p>
+                    </div>
                 </div>
+
+
 
             </div>
 
         </div>
     </section>
 
+    <section class="servicos" id="servicos">
 
+        <div class="container">
+            <!-- Titulo ou Subtitulo -->
+            <h2 class="badge rounded-pill text-bg-info">Serviços</h2>
 
-    <section id="servicos">
-        Serviços
+            <div>
+                <span>Conheça Nossos</span>
+                <span class="text-primary">Serviços</span>
+            </div>
+
+        </div> <!-- Container fim Titulo -->
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Coluna 1 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card">
+                        <i class="bi bi-briefcase"></i>
+
+                        <h4>Pacotes de Viagens</h4>
+                        <p>Escolha os melhores destinos incluindo hospedagem e Passagem Aérea.</p>
+
+                        <a href="#" class="stretched-link">
+                            <span>Leia Mais</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="col-lg-4 col-md-6">
+                    
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="col-lg-4 col-md-6">
+
+                </div>
+
+                <!-- Coluna 4 -->
+                <div class="col-lg-4 col-md-6">
+
+                </div>
+
+                <!-- Coluna 5 -->
+                <div class="col-lg-4 col-md-6">
+
+                </div>
+
+                <!-- Coluna 6 -->
+                <div class="col-lg-4 col-md-6">
+
+                </div>
+
+            </div> <!-- FIM ROW -->
+
+        </div>
+
     </section>
 
-    <section id="lugares">
-        Lugares
-    </section>
-
-    <section id="contato">
-        Contato
-    </section>
 
 
 
