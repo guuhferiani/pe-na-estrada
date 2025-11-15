@@ -1,0 +1,60 @@
+
+/* Call to Action */
+
+.cta {
+  padding: 7.25rem 0;
+  position: relative;
+  clip-path: inset(0); /* Recorte */
+}
+
+.cta img {
+  display: block;
+  position: fixed;
+  /* Posição */
+  top: 0;
+  right: 0;
+  width: 100%; /* largura */
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.cta .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* Filtro Antes da Foto */
+.cta::before {
+  content: "";
+  background: #3a3a3a79;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.cta .cta-btn {
+  font-size: 1.4rem;
+  color: azure;
+  /* background: green; */
+  text-decoration: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: .5rem;
+  transition: .5s;
+  letter-spacing: 1px;
+  font-weight: 400;
+  border: 2px solid azure;
+}
+
+.cta-btn {
+    margin-top: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.cta .cta-btn:hover {
+  /* filter: brightness(80%); */
+  background: green;
+  border: none;
+/*   box-shadow: 1px 1px 15px 5px #0000003d; */
+}
+
+
