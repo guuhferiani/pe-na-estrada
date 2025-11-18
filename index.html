@@ -19,7 +19,7 @@
 
 <body>
 
-    <header id="header" class="header ">
+    <header id="header" class="header fixed-top">
 
 
         <nav class="navbar navbar-expand-lg bg-primary">
@@ -64,8 +64,86 @@
 
     </header>
 
+    <!-- HERO -->
+    <section>
 
-    <!-- ALT + Shift + F -->
+        <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+            <!-- SLIDE 1 / FOTO 1 -->
+            <div class="carousel-item active text-center">
+
+                <img src="img/hero/slide1.jpg"
+                    alt="Vista do Palácio de Westminster e da torre do relógio em Londres, às margens do rio Tâmisa, com a ponte Westminster Bridge à direita." />
+
+                <div class="carousel-container">
+                    <h2>Pacotes para Conhecer Londres</h2>
+                    <p>
+                        Descubra Londres com nossos pacotes exclusivos, pensados para quem deseja conhecer de perto a
+                        cultura, a história e os principais pontos turísticos da cidade. Explore atrações icônicas,
+                        caminhe por bairros encantadores e viva experiências inesquecíveis enquanto aproveita um roteiro
+                        seguro, organizado e completo.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item text-center">
+                <img src="img/hero/slide2.jpg"
+                    alt="Entrada do Walt Disney World em Orlando, com um grande arco colorido exibindo Mickey e Minnie Mouse e a frase 'Where Dreams Come True' sobre a estrada principal.">
+
+                <div class="carousel-container">
+                    <h2>Venha Conhecer a Disney</h2>
+                    <p>
+                        Viva a magia da Disney com nossos pacotes especiais que levam você aos parques mais encantadores
+                        do
+                        mundo. Explore atrações imperdíveis, encontre seus personagens favoritos e crie memórias
+                        inesquecíveis em uma viagem cheia de diversão, fantasia e momentos únicos para todas as idades.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="carousel-item text-center">
+                <img src="img/hero/slide2.jpg"
+                    alt="Entrada do Walt Disney World em Orlando, com um grande arco colorido exibindo Mickey e Minnie Mouse e a frase 'Where Dreams Come True' sobre a estrada principal.">
+
+                <div class="carousel-container">
+
+                    <h2>Venha Conhecer a Disney</h2>
+                    <p>
+                        Viva a magia da Disney com nossos pacotes especiais que levam você aos parques mais encantadores
+                        do
+                        mundo. Explore atrações imperdíveis, encontre seus personagens favoritos e crie memórias
+                        inesquecíveis
+                        em uma viagem cheia de diversão, fantasia e momentos únicos para todas as idades.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Botoes de Navegação -->
+            <!-- Voltar -->
+            <a href="#hero-carousel" role="button" class="carousel-control-prev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <!-- Avançar -->
+            <a href="#hero-carousel" role="button" class="carousel-control-next" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+            <ol class="carousel-indicators"> </ol>
+
+
+
+        </div><!-- hero-carousel -->
+
+    </section>
+
+
+
+
+
 
     <!-- Sobre Mim / Sobre a Marca/Produto -->
     <section class="sobre" id="sobre">
@@ -259,7 +337,7 @@
                 <!-- Coluna 3 -->
                 <div class="col-lg-4 col-md-6 d-flex">
                     <div class="card card-body text-center shadow-sm h-100">
-                         <i class="bi bi-map text-warning fs-1 mb-3"></i>
+                        <i class="bi bi-map text-warning fs-1 mb-3"></i>
 
                         <h4>Viagens Nacionais e Internacionais</h4>
                         <p>Do Nordeste ao exterior, oferecemos destinos incríveis com roteiros culturais, de aventura e
@@ -337,20 +415,18 @@
                 <!-- Colunas Bootstrap -->
                 <div class="col-xl-10 text-center">
                     <h3 class="text-light fw-bold"> Pronto para viver sua próxima aventura? </h3>
-                    <p class="text-light mb-5">Fale conosco e montamos o roteiro perfeito para você, com conforto, segurança e emoção.</p>
-                    <a href="#" class="cta-btn"> 
+                    <p class="text-light mb-5">Fale conosco e montamos o roteiro perfeito para você, com conforto,
+                        segurança e emoção.</p>
+                    <a href="#" class="cta-btn">
                         <i class="bi bi-whatsapp"></i>
                         WhastApp
                     </a>
                 </div>
-                
+
             </div>
         </div>
 
-    </section> 
-
-
-
+    </section>
 
 
     <!-- Bootstrap JS -->
