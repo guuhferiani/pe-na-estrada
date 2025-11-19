@@ -1,4 +1,7 @@
-/* Hero */
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
 .hero {
   padding: 0;
 }
@@ -8,7 +11,6 @@
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  background-color: var(--background-color);
   position: relative;
 }
 
@@ -33,7 +35,7 @@
 
 .hero .carousel-item::before {
   content: "";
-  background-color: #00000060;
+  background-color: #00000081;
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -63,54 +65,9 @@
 }
 
 
-/* Aula hj 19/11 */
 
 
 
-/* Ajuste do icone */
-.hero .carousel-control-next-icon,
-.hero .carousel-control-prev-icon {
-  background: none;
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.hero .carousel-indicators {
-  list-style: none;
-}
-
-.hero .carousel-indicators li {
-  cursor: pointer;
-}
-
-.carousel-indicators .active {
-    background-color: #08aaeb !important; /* cor do indicador ativo */
-}
-
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
 
 
 /* Call to Action */
@@ -118,8 +75,7 @@
 .cta {
   padding: 7.25rem 0;
   position: relative;
-  clip-path: inset(0);
-  /* Recorte */
+  clip-path: inset(0); /* Recorte */
 }
 
 .cta img {
@@ -128,8 +84,7 @@
   /* Posição */
   top: 0;
   right: 0;
-  width: 100%;
-  /* largura */
+  width: 100%; /* largura */
   height: 100%;
   object-fit: cover;
   z-index: 1;
@@ -163,13 +118,14 @@
 }
 
 .cta-btn {
-  margin-top: 20px;
-  /* Ajuste o valor conforme necessário */
+    margin-top: 20px; /* Ajuste o valor conforme necessário */
 }
 
 .cta .cta-btn:hover {
   /* filter: brightness(80%); */
   background: green;
   border: none;
-  /*   box-shadow: 1px 1px 15px 5px #0000003d; */
+/*   box-shadow: 1px 1px 15px 5px #0000003d; */
 }
+
+
