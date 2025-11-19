@@ -12,7 +12,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Animação AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+
 
     <!-- CSS Base -->
     <link rel="stylesheet" href="css/style.css">
@@ -80,9 +82,11 @@
                 <div class="carousel-container">
                     <h2>Pacotes para Conhecer Londres</h2>
                     <p>
-                        Descubra Londres com nossos pacotes exclusivos, pensados para quem deseja conhecer de perto a
+                        Descubra Londres com nossos pacotes exclusivos, pensados para quem deseja conhecer de perto
+                        a
                         cultura, a história e os principais pontos turísticos da cidade. Explore atrações icônicas,
-                        caminhe por bairros encantadores e viva experiências inesquecíveis enquanto aproveita um roteiro
+                        caminhe por bairros encantadores e viva experiências inesquecíveis enquanto aproveita um
+                        roteiro
                         seguro, organizado e completo.
                     </p>
                 </div>
@@ -97,44 +101,62 @@
                 <div class="carousel-container">
                     <h2>Venha Conhecer a Disney</h2>
                     <p>
-                        Viva a magia da Disney com nossos pacotes especiais que levam você aos parques mais encantadores
+                        Viva a magia da Disney com nossos pacotes especiais que levam você aos parques mais
+                        encantadores
                         do
                         mundo. Explore atrações imperdíveis, encontre seus personagens favoritos e crie memórias
-                        inesquecíveis em uma viagem cheia de diversão, fantasia e momentos únicos para todas as idades.
+                        inesquecíveis em uma viagem cheia de diversão, fantasia e momentos únicos para todas as
+                        idades.
                     </p>
                 </div>
             </div>
 
             <!-- SLIDE 3 -->
             <div class="carousel-item text-center">
-                <img src="img/hero/slide2.jpg"
-                    alt="Entrada do Walt Disney World em Orlando, com um grande arco colorido exibindo Mickey e Minnie Mouse e a frase 'Where Dreams Come True' sobre a estrada principal.">
+                <img src="img/hero/slide3.jpg"
+                    alt="Dragão sobre o banco Gringotts na área do Beco Diagonal, no parque temático do Harry Potter, na Universal Orlando.">
 
                 <div class="carousel-container">
 
-                    <h2>Venha Conhecer a Disney</h2>
+                    <h2>Experiências no Mundo de Harry Potter</h2>
                     <p>
-                        Viva a magia da Disney com nossos pacotes especiais que levam você aos parques mais encantadores
-                        do
-                        mundo. Explore atrações imperdíveis, encontre seus personagens favoritos e crie memórias
-                        inesquecíveis
-                        em uma viagem cheia de diversão, fantasia e momentos únicos para todas as idades.
+                        Explore o universo mágico de Harry Potter no Beco Diagonal, onde cada detalhe foi criado
+                        para
+                        transportar você diretamente aos cenários dos filmes. Visite lojas icônicas, prove bebidas
+                        temáticas e sinta a emoção de estar diante do grandioso dragão de Gringotts, vivendo uma
+                        aventura inesquecível no coração da Universal Orlando.
                     </p>
                 </div>
             </div>
 
             <!-- Botoes de Navegação -->
+
+            <!-- AJUSTES -->
             <!-- Voltar -->
-            <a href="#hero-carousel" role="button" class="carousel-control-prev" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-            </a>
+                <span class="visually-hidden">Anterior</span>
+            </button>
 
             <!-- Avançar -->
-            <a href="#hero-carousel" role="button" class="carousel-control-next" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-            </a>
+                <span class="visually-hidden">Próximo</span>
+            </button>
 
-            <ol class="carousel-indicators"> </ol>
+            <!-- AJUSTES -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                    
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+        </div>
 
 
 
@@ -439,6 +461,9 @@
 
     <!-- Contador Stats -->
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
 
     <script>
         new PureCounter();
