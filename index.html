@@ -14,6 +14,12 @@
 
     <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
 
+    <!-- GLightBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!-- AOS CSS = Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS Base -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -78,8 +84,8 @@
                     alt="Vista do Palácio de Westminster e da torre do relógio em Londres, às margens do rio Tâmisa, com a ponte Westminster Bridge à direita." />
 
                 <div class="carousel-container">
-                    <h2>Pacotes para Conhecer Londres</h2>
-                    <p>
+                    <h2 data-aos="fade-down">Pacotes para Conhecer Londres</h2>
+                    <p data-aos="fade-down" data-aos-delay="300">
                         Descubra Londres com nossos pacotes exclusivos, pensados para quem deseja conhecer de perto a
                         cultura, a história e os principais pontos turísticos da cidade. Explore atrações icônicas,
                         caminhe por bairros encantadores e viva experiências inesquecíveis enquanto aproveita um roteiro
@@ -155,10 +161,6 @@
         </div><!-- hero-carousel -->
 
     </section>
-
-
-
-
 
 
     <!-- Sobre Mim / Sobre a Marca/Produto -->
@@ -444,7 +446,11 @@
 
     </section>
 
-    <a href="#" class="scroll=top"></a>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- G LightBox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -456,6 +462,9 @@
 
     <script>
         new PureCounter();
+        AOS.init(
+            { duration: 1200 }
+        );
     </script>
 
 </body>
