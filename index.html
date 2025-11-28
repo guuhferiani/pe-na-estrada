@@ -460,28 +460,28 @@
         </div>
 
         <!-- Estrutura da Galeria -->
-        <div class="">
+        <div class="container-fluid">
 
             <!-- ISOTOPE // Mansory -->
 
             <!-- Filtro -->
-            <div class="isotope-layout" data-defaut-filter="*" data-layout="masonry">
+            <div class="isotope-layout" data-defaut-filter="*" data-layout="masonry" data-sort="original-order">
 
                 <!-- Botoes do Filtro -->
                 <ul class="portfolio-filters isotope-filters">
                     <!-- Todos ou o Reset / Limpar a Selecao -->
                     <li data-filter="*" class="filter-active">Todos</li>
-                    <li data-filter="">Europa </li>
-                    <li data-filter="">Cruzeiros </li>
-                    <li data-filter="">Parques Temáticos </li>
-                    <li data-filter="">Trilhas</li>
+                    <li data-filter=".filter-cruz">Cruzeiros </li>
+                    <li data-filter=".filter-euro">Europa </li>
+                    <li data-filter=".filter-pqt">Parques Temáticos </li>
+                    <li data-filter=".filter-trip">Trilhas</li>
                 </ul>
 
                 <!-- Galeria na Horizontal -->
-                <div class="row g-0 isotope-container">
+                <div class="row g-0 isotope-container masonry-grid">
 
                     <!-- Fotos 1 Colunas Bootstrap -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-cruz">
 
                         <div class="portfolio-content">
                             <img src="img/galeria/cruzeiro1.jpg" alt="" class="img-fluid">
@@ -497,7 +497,55 @@
                     </div>
 
                     <!-- Foto 2 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-euro">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/europa1.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/europa1.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 3 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-pqt">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/parque1.png" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/parque1.png" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 4 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-trip">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/trilha1.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/trilha1.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 5 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-cruz">
 
                         <div class="portfolio-content">
                             <img src="img/galeria/cruzeiro2.jpg" alt="" class="img-fluid">
@@ -512,49 +560,191 @@
                         </div>
                     </div>
 
-                    <!-- Foto 3 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 ">
-                        FOTO 3
+                    <!-- Foto 6 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-euro">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/europa2.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/europa2.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Foto 4 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 ">
-                        FOTO 4
+                    <!-- Foto -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-pqt">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/parque2.png" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/parque2.png" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- Foto 8 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-trip">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/trilha2.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/trilha2.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 9 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-cruz">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/cruzeiro3.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/cruzeiro3.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 10 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-euro">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/europa3.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/europa3.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 11 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-pqt">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/parque3.webp" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/parque3.webp" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 12 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-trip">
+
+                        <div class="portfolio-content">
+                            <img src="img/galeria/trilha3.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+                                <!-- Link Foto -->
+                                <a href="img/galeria/trilha3.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
                 </div> <!-- FIM ROW -->
-
             </div> <!-- isotope-layout -->
         </div>
     </section>
 
-    <!-- Isotope -->
+    <!-- Isotope Filtro -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
-    <!-- AOS JS -->
+    <!-- AOS JS Animação Fade-in -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- G LightBox JS -->
+    <!-- G LightBox JS // Galeria -->
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.js"></script>
-
-    <!-- Contador Stats -->
+    <!-- PureCounter Contador Estatisticas -->
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+    <!-- Masonry Grid para Galeria -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <!-- imagesLoaded (recomendado para esperar as imagens carregarem) -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
     <!-- JavaScript -->
     <script>
-        new PureCounter();
-        AOS.init(
-            { duration: 1200 }
-        );
+        document.addEventListener('DOMContentLoaded', function () {
 
-        const lightbox = GLightbox();
+            // Iniciar o PureCounter
+            new PureCounter();
 
+            // Iniciar o AOS
+            AOS.init({
+                duration: 1200
+            });
+
+            // Galeria --- G LightBox
+            const lightbox = GLightbox();
+
+            // ISOTOPE + MASONRY + FILTER
+            const grid = document.querySelector('.isotope-container');
+            const filterButtons = document.querySelectorAll('.portfolio-filters li');
+
+            if (grid) {
+                imagesLoaded(grid, function () {
+                    // Inicializa o Isotope com layout Masonry
+                    const iso = new Isotope(grid, {
+                        itemSelector: '.portfolio-item',
+                        layoutMode: 'masonry',
+                        percentPosition: true,
+                        masonry: {
+                            columnWidth: '.portfolio-item' // usa a largura das colunas do Bootstrap
+                        }
+                    });
+
+                    // Filtro ao clicar nos botões
+                    filterButtons.forEach(btn => {
+                        btn.addEventListener('click', function () {
+                            // Classe visual ativa
+                            filterButtons.forEach(b => b.classList.remove('filter-active'));
+                            this.classList.add('filter-active');
+
+                            const filterValue = this.getAttribute('data-filter');
+                            iso.arrange({ filter: filterValue });
+                        });
+                    });
+                });
+            }
+
+        });
     </script>
+
 
 </body>
 
