@@ -473,7 +473,7 @@
                     <li data-filter="*" class="filter-active">Todos</li>
                     <li data-filter=".filter-cruz">Cruzeiros </li>
                     <li data-filter=".filter-euro">Europa </li>
-                    <li data-filter=".filter-pqt">Parques Temáticos </li>
+                    <li data-filter=".filter-pqt">Parques </li>
                     <li data-filter=".filter-trip">Trilhas</li>
                 </ul>
 
@@ -714,34 +714,44 @@
 
             // ISOTOPE + MASONRY + FILTER
             const grid = document.querySelector('.isotope-container');
-            const filterButtons = document.querySelectorAll('.portfolio-filters li');
+            // Pegue todos os Li's  <li>
+            const filterButtons = document.querySelectorAll('.portfolio-filters li'); 
 
             if (grid) {
-                imagesLoaded(grid, function () {
-                    // Inicializa o Isotope com layout Masonry
+                // Garantindo que as IMGS foram carregadas
+                imagesLoaded(grid, function() {
+
+                    //Inicia o Isotope com layout do Mansory
                     const iso = new Isotope(grid, {
+                        //Cada portfolio-item (IMG) é o ITEM do layout que sera organizado
                         itemSelector: '.portfolio-item',
+
+                        // Definir modo do layout = Mansory
                         layoutMode: 'masonry',
+
+                        //calcular o posicionamento em Porcentagem
                         percentPosition: true,
-                        masonry: {
-                            columnWidth: '.portfolio-item' // usa a largura das colunas do Bootstrap
+
+                        // Usa a largura das colunas do Bootstrap
+                        mansory: {
+                            columnWidth: '.portfolio-item',
                         }
                     });
 
-                    // Filtro ao clicar nos botões
-                    filterButtons.forEach(btn => {
-                        btn.addEventListener('click', function () {
-                            // Classe visual ativa
+                    // Filtro ao Clicar nos Botoes
+                    filterButtons.forEach(btn => {  
+                        btn.addEventListener('click', function() {
+                            
                             filterButtons.forEach(b => b.classList.remove('filter-active'));
                             this.classList.add('filter-active');
 
+                            // Pegar o atributo data-filter (x)
                             const filterValue = this.getAttribute('data-filter');
-                            iso.arrange({ filter: filterValue });
+                            iso.arrange({ filter: filterValue});
                         });
                     });
                 });
             }
-
         });
     </script>
 
