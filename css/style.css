@@ -154,12 +154,8 @@
 /* UL */
 .portfolio-filters { 
   list-style: none;
-  /* Centralizar o conteudo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 2.5rem 0;
+  margin: 10px auto 20px auto;
+  text-align: center;
 }
 
 /* Herança = Todas as Li's da UL */
@@ -168,12 +164,25 @@
   display: inline-block;
   font-size: 1.5rem;
   text-align: center;
-  background: #0790df;
-  color: #fff;
+  /* background: #0790df; */
+  color: #0790df;
   padding: 0rem 0.2rem;
   border-radius: 0.2rem;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
+.portfolio-filters li:hover,
+.portfolio-filters li.filter-active {
+  filter: brightness(95%);
+  background: #0b75de;
+  color: #fff;
+}
 
+/* O site em telas até 575px */
+@media (max-width: 575px) {
+  .portfolio-filters li {
+    font-size: 1rem;
+  }
+}
