@@ -677,9 +677,89 @@
     </section>
 
     <section class="contato" id="contato">
-        <div class="container">
-            <h2>Contato</h2>
+        <div class="container text-center" data-aos="">
+
+            <h2 class="badge rounded-pill text-bg-info">Contato</h2>
+
+            <div class="fs-3">
+                <span>Entre em contato conosco.</span>
+            </div>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- Coluna Esquerda Dados -->
+                <div class="col-lg-6">
+
+                    <div class="row gy-4">
+
+                        <!-- Quadrado 1 -->
+                        <div class="col-md-6">
+                            INFO 1
+                        </div>
+
+                        <!-- Quadrado 2 -->
+                        <div class="col-md-6">
+                            INFO 2
+                        </div>
+
+                        <!-- Quadrado 3 -->
+                        <div class="col-md-6">
+                            INFO 3
+                        </div>
+
+                        <!-- Quadrado 4 -->
+                        <div class="col-md-6">
+                            INFO 4
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Direita Formulario -->
+                <div class="col-lg-6">
+
+                    <form action="" method="post">
+
+                        <div class="row gy-4">
+                            <!-- Campo Nome -->
+                            <div class="col-md-6">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" name="nome" id="nome" required>
+                            </div>
+
+                            <!-- Campo Email -->
+                            <div class="col-md-6">
+                                <label for="email">Email *</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+
+                            <!-- Campo Telefone / WhatsApp -->
+                            <div class="col-md-6">
+                                <label for="telefone">WhatsApp *</label>
+                                <input type="tel" name="telefone" id="telefone" required>
+                            </div>
+
+                            <!-- Campo Assunto -->
+                            <div class="col-md-6">
+                                <label for="assunto">Assunto *</label>
+                                <input type="text" name="assunto" id="assunto" required>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+
     </section>
 
     <!-- Isotope Filtro -->
@@ -721,11 +801,11 @@
             // ISOTOPE + MASONRY + FILTER
             const grid = document.querySelector('.isotope-container');
             // Pegue todos os Li's  <li>
-            const filterButtons = document.querySelectorAll('.portfolio-filters li'); 
+            const filterButtons = document.querySelectorAll('.portfolio-filters li');
 
             if (grid) {
                 // Garantindo que as IMGS foram carregadas
-                imagesLoaded(grid, function() {
+                imagesLoaded(grid, function () {
 
                     //Inicia o Isotope com layout do Mansory
                     const iso = new Isotope(grid, {
@@ -745,20 +825,24 @@
                     });
 
                     // Filtro ao Clicar nos Botoes
-                    filterButtons.forEach(btn => {  
-                        btn.addEventListener('click', function() {
-                            
+                    filterButtons.forEach(btn => {
+                        btn.addEventListener('click', function () {
+
                             filterButtons.forEach(b => b.classList.remove('filter-active'));
                             this.classList.add('filter-active');
 
                             // Pegar o atributo data-filter (x)
                             const filterValue = this.getAttribute('data-filter');
-                            iso.arrange({ filter: filterValue});
+                            iso.arrange({ filter: filterValue });
                         });
                     });
                 });
             }
         });
+
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#navbarNav',
+        })
     </script>
 
 
